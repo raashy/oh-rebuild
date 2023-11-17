@@ -8,9 +8,9 @@ const WebResult = ({ result }: { result: WebResultType }) => {
         <img src={result.profile?.img} className="w-6 h-6 object-contain" />
 
         <div className="flex flex-col">
-          <span className="text-sm ">{result.profile.name}</span>
+          <span className="text-sm ">{result.profile?.name}</span>
           <span className="text-xs text-gray-600 line-clamp-1">
-            {result.meta_url.hostname} {result.meta_url.path}
+            {result.meta_url.hostname} {result.meta_url?.path}
           </span>
         </div>
       </div>
