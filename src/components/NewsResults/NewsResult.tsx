@@ -4,7 +4,7 @@ import React, { useTransition } from "react";
 
 const NewsResult = ({ result }: { result: NewsResultType }) => {
   return (
-    <div key={result.source} className="flex flex-row gap-8">
+    <div className="flex flex-row gap-8">
       <div className="flex-col flex">
         <div className="flex gap-2 items-center">
           <img src={result.meta_url?.favicon} className="w-4 h-4 object-contain" />
