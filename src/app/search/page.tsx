@@ -23,7 +23,7 @@ export default async ({ searchParams }: { searchParams: { q: string; page: strin
   const data = await response.json();
 
   const webResults = data.web.results as WebResultType[];
-  const videoResults = data.videos.results as VideoResultType[];
+  const videoResults = data?.videos?.results as VideoResultType[];
 
   const resultsList = data.mixed.main as { type: string; index: number }[];
 
